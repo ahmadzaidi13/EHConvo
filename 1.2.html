@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+        /* Custom CSS for green line animation */
+        .header-hover::before {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+        }
+        .header-hover:hover::before {
+            background-color: #10B981; /* Green color */
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-green-500">
+    <div class="w-full max-w-3xl p-6 bg-white rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold text-center fade-in header-hover">Unit 2</h2>
+        <h2 class="text-2xl font-semibold text-center mt-4 fade-in header-hover">Seasons</h2>
+
+        <div class="mt-6">
+            <h3 class="text-xl font-medium fade-in header-hover">Activities 1: Conversation</h3>
+            <p class="mt-2 fade-in">How many seasons do you have in your country?</p>
+            <p class="mt-1 fade-in">Do you think other countries in the world have the same seasons?</p>
+        </div>
+
+        <div class="mt-6">
+            <h3 class="text-xl font-medium fade-in header-hover">Activities 2: Watching Video</h3>
+            <iframe class="w-full mt-2 fade-in" height="315" src="https://www.youtube.com/embed/CNTvKPVM2a4?si=92tPUY5RAo4F-DNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="mt-2 fade-in">How many seasons do you have in your country?</p>
+            <p class="mt-1 fade-in">Do you think other countries in the world have the same seasons?</p>
+        </div>
+
+        <div class="mt-6">
+            <h3 class="text-xl font-medium fade-in header-hover">Activities 3: Watching Video</h3>
+            <p class="mt-2 fade-in">Does the sun in your country rise and set at the same time? Watch the video and compare.</p>
+            <iframe class="w-full mt-2 fade-in" height="315" src="https://www.youtube.com/embed/mPfexz72ClU?si=2zT_NHtCbQevniIH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="mt-2 fade-in">What is the reason we have different seasons all around the world?</p>
+        </div>
+
+        <div class="mt-6">
+            <h3 class="text-xl font-medium fade-in header-hover">Activities 4: Watching</h3>
+            <p class="mt-2 fade-in">Watch the following video and discuss why the earth has different seasons</p>
+            <iframe class="w-full mt-2 fade-in" height="315" src="https://www.youtube.com/embed/WgHmqv_-UbQ?si=dbgzhiUtW3oGWpj1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="mt-6">
+            <h3 class="text-xl font-medium fade-in header-hover">Activities 4: Games</h3>
+            <p class="mt-2 fade-in">Play this game and learn weather vocabularies</p>
+            <a class="text-blue-500 underline mt-2 block fade-in" href="https://www.gamestolearnenglish.com/weather/">Weather vocabularies Game</a>
+        </div>
+
+        <div class="mt-6">
+            <h3 class="text-xl font-medium fade-in header-hover">Activities 4: Biomes Game</h3>
+            <p class="mt-2 fade-in">What is desert, tundra, or beach? Play this game and learn biomes</p>
+            <a class="text-blue-500 underline mt-2 block fade-in" href="https://switchzoo.com/bb/">Biomes Game</a>
+        </div>
+    </div>
+</body>
+</html>

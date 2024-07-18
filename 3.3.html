@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conversation Level 3 Unit 2</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+        /* Custom CSS for green line animation */
+        .header-hover::before {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+        }
+        .header-hover:hover::before {
+            background-color: #10B981; /* Green color */
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-green-500">
+    <div class="w-full max-w-3xl p-6 bg-white rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold text-center fade-in header-hover">Unit 3</h2>
+        <h2 class="text-2xl font-semibold text-center mt-4 fade-in header-hover">Transport</h2>
+
+        <div class="mt-6">
+            <h3 class="text-xl font-medium fade-in header-hover">Activity 1: SPEAKING TIME! -  DESCRIBE THIS PICTURE!</h3>
+            <img class="w-full mt-2 fade-in" src="history_of_transport.png" alt="history_of_transport" class="center">
+        </div>
+
+        <div class="mt-6">
+            <h3 class="text-xl font-medium fade-in header-hover">Activity 2 - WATCH THESE VIDEOS</h3>
+            <p class="mt-2 fade-in">VIDEO 1</p>
+            <iframe class="w-full mt-2 fade-in" height="315" src="https://www.youtube.com/embed/5rg7vgniCZc?si=NEFdYMJL1a5aVjIO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="mt-2 fade-in">VIDEO 2</p>
+            <iframe class="w-full mt-2 fade-in" height="315" src="https://www.youtube.com/embed/VNJcdCR9heM?si=lC5Vf5ygUVHryxQ1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="mt-2 fade-in">Could you imagine what it would be like if we live without transportation?</p>
+        </div>
+
+        <div class="mt-6">
+            <h3 class="text-xl font-medium fade-in header-hover">Activity 4 - Phrasal Verbs</h3>
+            <img class="w-full mt-2 fade-in" src="travelling.png" alt="travelling" class="center">
+        </div>
+
+        <div class="mt-6">
+            <h3 class="text-xl font-medium fade-in header-hover">Activity 5 - WATCH THE VIDEO</h3>
+            <iframe class="w-full mt-2 fade-in" height="315" src="https://www.youtube.com/embed/raF0-wkJrqU?si=TiLFQDDwFT-6LVTO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="mt-2 fade-in">1. Would you like to go to the UK? Why?</p>
+            <p class="mt-2 fade-in">2. What do you think about public transportation in the UK? </p>
+            <p class="mt-2 fade-in">3. Could you compare the good and the bad of public transportation in your country?</p>
+            
+        </div>
+      
+    </div>
+</body>
+</html>

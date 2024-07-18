@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+        /* Custom CSS for green line animation */
+        .header-hover::before {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+        }
+        .header-hover:hover::before {
+            background-color: #10B981; /* Green color */
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-green-500">
+    <div class="w-full max-w-3xl p-6 bg-white rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold text-center fade-in header-hover">Unit 4</h2>
+        <h2 class="text-2xl font-semibold text-center mt-4 fade-in header-hover">Customs and Tradition</h2>
+
+        <div class="mt-6">
+            <h3 class="text-xl font-medium fade-in header-hover">Activity 1 - Watch the video!</h3>
+            <p class="mt-2 fade-in">VIDEO 1</p>
+            <iframe class="w-full mt-2 fade-in" height="315" src="https://www.youtube.com/embed/xerrjjAyZs8?si=vgSPMr2d4iiBDdin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="mt-2 fade-in">Which culture in the video do you think is the most interesting? Why?</p>
+            <p class="mt-2 fade-in">Which one is the least intriguing? Why?</p>
+        </div>
+
+        <div class="mt-6">
+            <h3 class="text-xl font-medium fade-in header-hover">Activity 2 - Check out the following customs and traditions around the world!</h3>
+            <a class="text-blue-500 underline mt-2 block fade-in" href="https://www.baamboozle.com/game/523447">Biomes Game</a>
+            <p class="mt-2 fade-in">Which one do you think is true? Which one do you think is false?</p>
+        </div>
+
+        <div class="mt-6">
+            <h3 class="text-xl font-medium fade-in header-hover">Activity 3 - Watch the video!</h3>
+            <iframe class="w-full mt-2 fade-in" height="315" src="https://www.youtube.com/embed/6GNmQypUVM8?si=qgF5PeV3wjI4Ed-h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="mt-2 fade-in">What do you think about Oaxaca fashion?</p>
+        </div>
+
+        
+        <div class="mt-6">
+            <h3 class="text-xl font-medium fade-in header-hover">Activity 4 - Mention the traditional clothes you have ever heard of!</h3>
+            <p class="mt-2 fade-in">Watch the video!</p>
+            <iframe class="w-full mt-2 fade-in" height="315" src="https://www.youtube.com/embed/F-JYr7HOsxc?si=Lh2oQDbZo7D3K_Fv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="mt-2 fade-in">Do any of the traditional clothes you know appear in the video?</p>
+            <p class="mt-2 fade-in">Which traditional clothes do you want to try the most? Why?</p>
+            <p class="mt-2 fade-in">Which traditional clothes do you want to try the least? Why?</p>
+        </div>
+
+        <div class="mt-6">
+            <h3 class="text-xl font-medium fade-in header-hover">Activity 5 - Mention the wedding traditions you have ever heard of!</h3>
+            <p class="mt-2 fade-in">Watch the video!</p>
+            <iframe class="w-full mt-2 fade-in" height="315" src="https://www.youtube.com/embed/6WeD_a0Zil4?si=duU1PpnvQhDK2MSF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="mt-2 fade-in">Do any of the wedding traditions you mention previously appear in the video?</p>
+            <p class="mt-2 fade-in">Which wedding traditions do you want to try the most? Why?</p>
+            <p class="mt-2 fade-in">Which wedding traditions do you want to try the least? Why?</p>
+        </div>
+      
+    </div>
+</body>
+</html>
